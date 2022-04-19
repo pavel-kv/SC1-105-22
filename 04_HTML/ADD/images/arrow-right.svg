@@ -1,0 +1,13 @@
+<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer_1">
+  <title>Layer1</title>
+  <g transform="rotate(-180 30 30)" id="svg_4">
+   <ellipse stroke="null" ry="29.5" rx="29.5" id="svg_1" cy="30" cx="30" stroke-width="1pt" fill="#007fff"/>
+   <g id="svg_3">
+    <rect id="svg_2" height="17.97101" width="30" y="21" x="22" stroke-width="1pt" stroke="null" fill="#ffffff"/>
+    <path transform="rotate(45 22.5608 30)" id="svg_16" d="m10.53181,42.02898l0,-24.05798l24.05797,24.05798l-24.05797,0z" stroke-width="1pt" stroke="null" fill="#ffffff"/>
+   </g>
+  </g>
+ </g>
+
+</svg>
