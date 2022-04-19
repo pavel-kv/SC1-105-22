@@ -127,7 +127,7 @@
                 <form action="http://fe.it-academy.by/TestForm.php" method="get" name="fValidate">
                     <fieldset>
                         <legend>Строка поиска</legend>
-                        <input type="text" name="strSearch" pattern="[а-яА-Я ]+" placeholder="Только русские буквы"> <br><br>
+                        <input type="text" name="strSearch" pattern="[а-яА-ЯёЁ\s]+" placeholder="Только русские буквы"> <br><br>
                         <input type="text" name="phone" pattern="\+[0-9]{3}-[0-9]{2}-[0-9]{7}" placeholder="+XXX-XX-XXXXXXX"> <br><br>
                         <input type="submit" name="btnCheck" value="Проверить">
                     </fieldset>
