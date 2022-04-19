@@ -23,8 +23,8 @@
             <fieldset>
                 <legend>Дата рождения</legend>
                 <input type="text" name="yearBirth" maxlength="4" pattern="(19|20)[0-9]{2}" size="4" placeholder="2000"><br>
-                <select name="monthBirth">
-                    <option value="1">Январь</option>
+                <select name="monthBirth" size="1">
+                    <option value="1" selected>Январь</option>
                     <option value="2">Февраль</option>
                     <option value="3">Март</option>
                     <option value="4">Апрель</option>
@@ -37,11 +37,11 @@
                     <option value="11">Ноябрь</option>
                     <option value="12">Декабрь</option>
                 </select><br>
-                <input type="number" name="dayBirth" maxlength="2" min="1" max="31" step="1">
+                <input type="number" name="dayBirth" min="1" max="31" step="1">
             </fieldset> 
             
-            <select name="nationality" required>
-                <option value="BY">Республика Беларусь</option>
+            <select name="nationality">
+                <option value="BY" selected>Республика Беларусь</option>
                 <option value="LТ">Литовская Республика</option>
                 <option value="LV">Латвийская Республика</option>
                 <option value="UA">Украина</option>
