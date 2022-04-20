@@ -26,10 +26,10 @@
                 <form action="http://fe.it-academy.by/TestForm.php" method="get" name="fSearchAuto">
                     <fieldset>
                         <legend>Строка поиска</legend>
-                        <label><input type="search" name="strSearch" autofocus required><sup>*</sup></label>
+                        <input type="search" name="strSearch" autofocus required><sup>*</sup>
                         <input type="submit" name="btnSearch" value="Искать"> <br>
-                        <label><input type="radio" name="rbSearch" value="site">на сайте</label>
-                        <label><input type="radio" name="rbSearch" value="google" checked>в google</label><br>
+                        <input type="radio" id="rbSearch1" name="rbSearch" value="site"><label for="rbSearch1">на сайте</label>
+                        <input type="radio" id="rbSearch2" name="rbSearch" value="google" checked><label for="rbSearch2">в google</label><br>
                         <label><sup>*</sup> - обязательное поле</label>                       
                     </fieldset>
                 </form>
@@ -41,9 +41,9 @@
                 <form action="http://fe.it-academy.by/TestForm.php" method="get" name="fAuthorization">
                     <fieldset>
                         <legend>Авторизуйтесь</legend>
-                        <label><input type="text" name="login" required><sup>*</sup> Логин</label> <br>
-                        <label><input type="password" name="password" required><sup>*</sup> Пароль</label> <br>
-                        <label><input type="checkbox" name="cbStaySys">Оставаться в системе</label> <br>
+                        <input type="text" id="login" name="login" required><sup>*</sup> <label for="login">Логин</label> <br>
+                        <input type="password" id="password" name="password" required><sup>*</sup> <label for="password">Пароль</label> <br>
+                        <input type="checkbox" id="cbStaySys" name="cbStaySys"> <label for="cbStaySys">Оставаться в системе</label> <br>
                         <input type="submit" name="btnEnter" value="Войти"> <br>
                         <label><sup>*</sup> - обязательное поле</label> 
                     </fieldset>
@@ -70,8 +70,9 @@
                 <form action="http://fe.it-academy.by/TestForm.php" method="post" name="fReview">
                     <fieldset>
                         <legend>Оставьте Ваш отзыв</legend>
-                        <label><input type="text" name="name" required><sup>*</sup> Имя</label> <br>
-                        <label><input type="email" name="email" pattern="[a-zA-Z0-9-_.]+@[a-zA-Z0-9-_.]+\.[a-zA-Z]{2,6}" required><sup>*</sup> e-mail</label> <br><br>
+                        <input type="text" id="name" name="name" required><sup>*</sup> <label for="name">Имя</label> <br>
+                        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9-_.]+@[a-zA-Z0-9-_.]+\.[a-zA-Z]{2,6}" required><sup>*</sup> 
+                            <label for="email">e-mail</label> <br><br>
                         <textarea name="review" lang="ru" cols="21" rows="5" placeholder="Форма отправки"></textarea><br>
                         <input type="submit" name="btnSend" value="Отправить"> <br>
                         <label><sup>*</sup> - обязательное поле</label> 
