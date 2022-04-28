@@ -5,10 +5,16 @@
     <title>Страница с блоками</title>
     <style>
         body {
-            background-color:azure;
+            background-color: white;
             color: #fff;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 1em;
+        }
+        .header {
+            background-color: #9c1d1d;
+            text-align: center;
+            padding: 0.1em;
+            margin-bottom: 0.2em;
         }
         .wrapper {
             background-color: #7a877f;
@@ -16,17 +22,15 @@
         .navigate {
             background-color: #0CA645;
             width: 15em;
-            height: auto;
             padding: 0 1em;
             float: left;
-            overflow: hidden;
         }
         .article {
             background-color: #0F6F8F;
-            height: auto; 
             padding: 0 1em;
             margin-bottom: 0.2em;
-            overflow: hidden; 
+            height: auto;
+            overflow: hidden;
         }
         .footer {
             background-color: #1D349C;
@@ -34,23 +38,33 @@
             clear: both;
         }
         .icon {
-            margin-top: 3em;
             float: right;
         }
         h1 {
+            font-size: 3em;
             text-decoration: underline;
             margin-bottom: 1em;
         }
+        h2 {
+            font-size: 2em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
         li {
-            margin: 0 0 0.5em -0.5em;
+            margin: 0 0 0.8em -0.8em;
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>MUSE</h1>
+    </div>
+    
     <div class="wrapper">
         <div class="navigate">
-            <h1>MUSE</h1>
-            <h2>Discography</h2>
+            <h2>MUSE</h2>
+            <h3>Discography</h3>
             <ul>
                 <li>1999 — Showbiz</li>
                 <li>2001 — Origin of Symmetry</li>
@@ -93,12 +107,9 @@
                 to produce the band's first album, Showbiz (1999). The album showcased Muse's aggressive yet melancholic musical style, 
                 with lyrics about relationships and their difficulties trying to establish themselves in their hometown.
             </p>
-            
             <img class="icon" src="images/icon_mail.png" alt="обратная связь" title="Напишите нам">
-
         </div>
     </div> 
-
 
     <div class="footer">
         <p>
