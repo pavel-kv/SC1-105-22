@@ -2,34 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Image background. One div</title>
+    <title>Border-image. One div</title>
     <style>
-        .frame {
-            background: url(images/frame/t-l.png) no-repeat top left, 
-                        url(images/frame/t-r.png) no-repeat top right,
-                        url(images/frame/b-l.png) no-repeat bottom left,
-                        url(images/frame/b-r.png) no-repeat bottom right,
-                        url(images/frame/t.png) repeat-x top,
-                        url(images/frame/l.png) repeat-y left,
-                        url(images/frame/r.png) repeat-y right,
-                        url(images/frame/b.png) repeat-x bottom #fff;
+        .frame-image {
             width: 50%;
-            padding: 4em;
+            border: 60px solid gray;
+            border-image: url(images/frame/frame.jpg) 150 round;
+            padding: 1em;
+            background-color: white;
             color: black;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: large;
             text-align: justify;
+
         }
     </style>
 </head>
 <body>
 
-    <div class="frame">
+    <div class="frame-image">
         <p>
             I remember him as if it were yesterday, as he came plodding to the inn door, his sea-chest following behind him in a hand-barrow—a tall, strong, heavy, nut-brown man, his tarry pigtail falling over the shoulder of his soiled blue coat, his hands ragged and scarred, with black, broken nails, and the sabre cut across one cheek, a dirty, livid white. I remember him looking round the cove and whistling to himself as he did so, and then breaking out in that old sea-song that he sang so often afterwards:
         </p>    
         <blockquote>
-            “Fifteen men on the dead man’s chest—<br>
+            “Fifteen men on the dead man's chest—<br>
             Yo-ho-ho, and a bottle of rum!”
         </blockquote>
         <p>
@@ -39,6 +35,5 @@
             TREASURE ISLAND, Robert Louis Stevenson
         </p>       
     </div>
-    
 </body>
 </html>
