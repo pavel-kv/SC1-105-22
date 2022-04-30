@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница с блоками</title>
+    <style>
+        body {
+            background-color: white;
+            color: #fff;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1em;
+        }
+        section {
+            display: flex;
+            background-color: #7a877f;
+            margin-bottom: 0.2em;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .navigate {
+            background-color: #0CA645;
+            padding: 0 1em;
+            flex-basis: 15em;
+        }
+        .content {
+            display: flex;
+            flex: 3;            
+            flex-direction: column;
+            background-color: #0F6F8F;
+            padding: 0 1em;
+        }
+        .content :first-child {
+            margin-bottom: 0.2em;
+        }
+        .content :nth-child(3) {
+            align-self: flex-end;
+        }       
+        .footer {
+            background-color: #1D349C;
+            padding: 1em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        li {
+            margin: 0 0 0.8em -0.8em;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="navigate">
+            <h2>MUSE</h2>
+            <h3>Discography</h3>
+            <ul>
+                <li>1999 — Showbiz</li>
+                <li>2001 — Origin of Symmetry</li>
+                <li>2003 — Absolution</li>
+                <li>2006 — Black Holes and Revelations</li>
+                <li>2009 — The Resistance</li>
+                <li>2012 — The 2nd Law</li>
+                <li>2015 — Drones</li>
+                <li>2018 — Simulation Theory</li>
+                <li>2022 — Will of the People</li>
+            </ul>            
+        </div>
+
+        <div class="content">
+            <div>
+                <h2>MUSE discography</h2>
+                <p>
+                    The discography of Muse, an English rock band, consists of eight studio albums, two live albums,
+                    one compilation album, one box set, five extended plays (EPs), 44 singles, two video albums, 
+                    61 music videos and four other appearances. Formed in Teignmouth, Devon in 1994, 
+                    the band signed with Mushroom Records in the United Kingdom and Maverick Records in the United States 
+                    before releasing their debut album Showbiz in 1999. The album was a success across Europe, 
+                    and in the UK reached number 29 on the UK Albums Chart, as well as being certified platinum 
+                    by the British Phonographic Industry (BPI). Five singles were released from Showbiz, 
+                    with final release "Unintended" the band's first to reach the top 20 on the UK Singles Chart.
+                    Muse released their second album Origin of Symmetry in 2001, which reached number 3 
+                    on the UK Albums Chart and was certified double platinum by the BPI. 
+                    The album's first three singles, "Plug In Baby", "New Born" and "Bliss", all reached the UK top 25.
+                </p>
+            </div>
+            <div>
+                <h2>Showbiz</h2>
+                <p>
+                    After a trip to New York's CMJ Festival, Nanci Walker, then Sr. Director of A&R at Columbia Records, 
+                    flew Muse to the US to showcase for Columbia Records' then-Senior Vice-president of A&R, Tim Devine, 
+                    as well as for American Recording's Rick Rubin. During this trip, on 24 December 1998, 
+                    Muse signed a deal with American record label Maverick Records. Upon their return to England, 
+                    Taste Media arranged deals for Muse with various record labels in Europe and Australia, 
+                    allowing them control over their career in individual countries. John Leckie was brought in alongside Reeve 
+                    to produce the band's first album, Showbiz (1999). The album showcased Muse's aggressive yet melancholic musical style, 
+                    with lyrics about relationships and their difficulties trying to establish themselves in their hometown.
+                </p>
+            </div>
+            <div>
+                <img src="images/icon_mail.png" alt="обратная связь" title="Напишите нам">
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <p>
+            Muse are an English rock band from Teignmouth, Devon, formed in 1994. 
+            The band consists of Matt Bellamy (lead vocals, guitar, keyboards), 
+            Chris Wolstenholme (bass guitar, backing vocals), and Dominic Howard (drums).
+        </p>
+        <p>
+            Muse have won numerous awards, including two Grammy Awards, two Brit Awards, 
+            five MTV Europe Music Awards and eight NME Awards. In 2012 they received the Ivor Novello Award 
+            for International Achievement from the British Academy of Songwriters, Composers and Authors. 
+            As of June 2016, they have sold over 30 million albums worldwide.
+        </p>
+    </div> 
+
+</body>
+</html>
