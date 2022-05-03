@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Адаптивная навигация</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #ddd;
+            font-family: 'Tinos', serif;
+            font-size: 16px;
+            color: black;  
+            margin: 20px;      
+            height: 500px;    
+        }
+        .menulevel1>div {
+            float: left;
+            background-color: #aaa;
+            color: black;
+            width: 110px;
+            height: 20px;
+            padding: 2px;
+            border: solid #333 2px;
+            border-radius: 5px;
+        }
+        .menulevel1 > div:hover div.menulevel2 {
+           display: block;
+        }
+        .menulevel1 > div:hover {
+            background-color: #555;
+            color: #eee;
+        }
+        .menulevel2 {
+            display: none;
+            margin-top: 6px;
+            margin-left: -4px;
+        }
+        .menulevel2 > div{
+            background-color: #aaa;
+            color: black;
+            width: 110px;
+            height: 20px;
+            padding: 2px;
+            border: solid #333 2px;
+            border-radius: 5px;
+        }
+        @media all and (max-width: 880px ) {
+            .menulevel1>div {
+                clear: both;
+            }  
+            .menulevel2 {
+                margin-top: -22px;
+                margin-left: 114px;
+            }                      
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menulevel1">
+        <div>Понедельник
+            <div class="menulevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+
+        <div>Вторник
+            <div class="menulevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+
+        <div>Среда
+            <div class="menulevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+
+        <div>Четверг
+            <div class="menulevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>    
+
+        <div>Пятница
+            <div class="menulevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+
+        <div>Суббота
+            <div class="menulevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+
+        <div>Воскресенье
+            <div class="menulevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
