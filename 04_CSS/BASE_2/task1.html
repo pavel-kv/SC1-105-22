@@ -16,19 +16,19 @@
         caption {
             caption-side: bottom;
         }
-        table tr:first-child{
+        tr:first-child{
             background-color: #888;
         }
-        table tr td{
+        tr > td{
             border-bottom: 2px dotted #888; 
         }
-        table tr td:not(:last-child){
+        tr > td:not(:last-child){
             border-right: 2px dotted #888;
         }
-        table tr:not(:first-child):nth-child(odd) {
+        tr:not(:first-child):nth-child(odd) {
             background-color: #d3d3d3;
         }
-        table tr:not(:first-child):hover {
+        tr:not(:first-child):hover {
             background-color: #aaddaa;
         }
     </style>

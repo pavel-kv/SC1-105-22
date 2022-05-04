@@ -14,29 +14,49 @@
             margin: 20px;      
             height: 500px;    
         }
-        /* Используется свойство float */
+        /* Испоьзуется относительное позиционирование */
         .menulevel1 > div {
-            float: left;
+            position: relative;
             background-color: #aaa;
             color: black;
             width: 110px;
             height: 20px;
             padding: 2px;
-            margin-top: -2px;
             border: solid #333 2px;
             border-radius: 5px;
         }
-        .menulevel1 > div:hover div.menulevel2 {
-           display: block;
+        .menulevel1 > div:nth-child(2) {
+            top: -28px;
+            left: 117px;
         }
-        .menulevel1 > div:hover {
-            background-color: #555;
-            color: #eee;
+        .menulevel1 > div:nth-child(3) {
+            top: -56px;
+            left: 234px;
+        }
+        .menulevel1 > div:nth-child(4) {
+            top: -84px;
+            left: 351px;
+        }
+        .menulevel1 > div:nth-child(5) {
+            top: -112px;
+            left: 468px;
+        }
+        .menulevel1 > div:nth-child(6) {
+            top: -140px;
+            left: 585px;
+        }
+        .menulevel1 > div:nth-child(7) {
+            top: -168px;
+            left: 702px;
         }
         .menulevel2 {
             display: none;
-            margin-top: 6px;
-            margin-left: -4px;
+            position: relative;
+            top: 5px;
+            right: 4px;
+        }
+        .menulevel1 > div:hover div.menulevel2 {
+           display: block;
         }
         .menulevel2 > div {
             background-color: #aaa;
@@ -44,9 +64,12 @@
             width: 110px;
             height: 20px;
             padding: 2px;
-            margin-top: -2px;
             border: solid #333 2px;
             border-radius: 5px;
+        }
+        .menulevel1 > div:hover {
+            background-color: #555;
+            color: #eee;
         }
         div.menulevel2 > div:hover {
             background-color: #555;
@@ -54,12 +77,13 @@
         }
         @media all and (max-width: 880px ) {
             .menulevel1 > div {
-                clear: both;
+                position: static;
             }  
             .menulevel2 {
-                margin-top: -22px;
-                margin-left: 114px;
-            }                      
+                position: relative;
+                top: -22px;
+                right: -113px;
+            }       
         }
 
     </style>
