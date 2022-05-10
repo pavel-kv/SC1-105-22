@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-size: 18px;
+            margin: 20px;
+        }
+
+        fieldset {
+            width: 400px;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Проверка пароля</h1>
+    <form id="formCheckPass" name="formCheckPass" action="" method="get">
+        <fieldset>
+            <label><input type="text" name="pass1" id="pass1"> *пароль</label><br>          
+            <label><input type="text" name="pass2" id="pass2"> *повторите пароль</label><br>   
+            <input type="submit" value="Отправить">         
+        </fieldset>        
+    </form> 
+
+  
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function(){
+           
+                $('#pass1').keyup(function(){
+                    if( $('#pass2').val() == '' || passIsMatch($('#pass1'), $('#pass2')) ) {
+                        passMatch($('#pass1'), $('#pass2'));
+                    } else {
+                        passNotMatch($('#pass1'), $('#pass2'));
+                    }
+                 });
+
+                $('#pass2').keyup(function(){
+                    if( $('#pass1').val() == '' || passIsMatch($('#pass1'), $('#pass2')) ) {
+                        passMatch($('#pass1'), $('#pass2'));
+                    } else {
+                        passNotMatch($('#pass1'), $('#pass2'));
+                    }
+                });
+
+                function passIsMatch (pass1, pass2) {
+                    if( pass1.val() == pass2.val() ) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+
+                function passMatch (pass1, pass2) {
+                    $(pass1).css('backgroundColor', 'green');
+                    $(pass2).css('backgroundColor', 'green');
+                }
+
+                function passNotMatch (pass1, pass2){
+                    $(pass1).css('backgroundColor', 'red');
+                    $(pass2).css('backgroundColor', 'red');
+                }
+
+
+        });
+
+    </script>
+</body>
+</html>
